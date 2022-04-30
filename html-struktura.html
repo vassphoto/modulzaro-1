@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* HTMl törzs */
+        html,
+        body {
+            height: 100%;
+            margin: 0px auto;
+        }
+
+
+        /* Fejléc */
+        .header {
+            background-color: #163EF3;
+            color: #FFFFFF;
+            padding: 80px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Menüsor */
+        .navbar {
+            background-color: #16B4F3;
+            color: #FFFFFF;
+            padding: 20px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        /* Flexbox konténer */
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 5px;
+            height: 550px;
+            text-align: center;
+        }
+
+        /* Bal oldali sáv */
+        .left-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            background-color: #4CC151;
+            padding: 20px;
+            height: 100%;
+            color: #FFFFFF;
+            margin-right: 5px;
+        }
+
+
+        /* Tartalom */
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 4;
+            background-color: #016D06;
+            color: #FFFFFF;
+            padding: 20px;
+            height: 100%;
+        }
+
+        /* Jobb oldali sáv */
+        .right-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            background-color: #4CC151;
+            padding: 20px;
+            height: 100%;
+            color: #FFFFFF;
+            margin-left: 5px;
+        }
+
+        /* Lábléc */
+        .footer {
+            background-color: #163EF3;
+            color: #FFFFFF;
+            padding: 50px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+
+    <title>HTML struktúra</title>
+</head>
+
+<body>
+
+    <!-- Fejléc -->
+    <div class="header">
+        Header
+    </div>
+
+    <!-- Menüsor -->
+    <div class="navbar">
+        Navigation Menu
+    </div>
+
+    <!-- Flexbox konténer -->
+    <div class="row">
+
+        <div class="left-side">
+            Content
+        </div>
+
+        <div class="main">
+
+            Main Content
+
+        </div>
+
+        <div class="right-side">
+            Content
+        </div>
+
+    </div>
+
+    <!-- Lábléc -->
+    <div class="footer">
+        Footer
+    </div>
+
+</body>
+
+</html>
