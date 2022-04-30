@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript átlagszámítás</title>
+    </head>
+    <body>
+
+        <script>
+        
+        function atlagszamitas(szamok) {
+        
+        var i=0;
+        var szamokosszege = 0;
+        szamokdarabszama = szamok.length;
+
+        while ( i < szamokdarabszama ){
+            szamokosszege = szamokosszege + szamok[i++];
+        }
+
+        return szamokosszege / szamokdarabszama;
+
+        }
+
+        var szamok = [55, 78, 92, 135, 189, 253];    
+        var eredmeny = atlagszamitas(szamok);
+        document.write("A számok átlaga: "+ eredmeny.toFixed (2));
+        
+        </script>
+
+    </body>
+</html> 
